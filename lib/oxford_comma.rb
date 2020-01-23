@@ -1,10 +1,11 @@
 def oxford_comma(array)
-  puts array
-  array[-1] = "and #{array[-1]}"
-   result = array.join(", ")
-  puts "Result"
-  pp result
-  #return array.join(", ")
+  case array.size()
+  when >1  
+    array[-1] = "and #{array[-1]}"
+    return array.join(",")
+  when 1
+    array.join()
+ end
 end
 
 
