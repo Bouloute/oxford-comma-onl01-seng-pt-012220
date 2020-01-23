@@ -1,9 +1,9 @@
 def oxford_comma(array)
   puts array
   array[-1] = "and #{array[-1]}"
-  array.join(", ")
+   result = array.join(", ")
   puts "Result"
-  pp array
+  pp result
   #return array.join(", ")
 end
 
