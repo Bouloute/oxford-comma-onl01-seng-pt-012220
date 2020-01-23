@@ -1,6 +1,7 @@
 def oxford_comma(array)
   puts array
   array[-1] = "and #{array[-1]}"
+  array.join(", ")
   puts "Result"
   pp array
   #return array.join(", ")
